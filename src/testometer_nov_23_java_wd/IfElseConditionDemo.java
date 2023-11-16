@@ -11,24 +11,42 @@ public class IfElseConditionDemo {
 		// 30-45 , mature 
 		// 45 , old 
 
+		// 0, 17, 18, 19, 29, 30, 31, 44, 45, 46, 60
+
+
 		System.out.println("Welcome to my Age Calculator");
-		Scanner scan = new Scanner(System.in);
-			System.out.println("Please enter your age :");
+		while(true) {
+			System.out.println("--------------");
+			Scanner scan = new Scanner(System.in);
+			System.out.print("Please enter your age :");
 			int age = scan.nextInt();
-
-			// if elseif
-
-			//	int age = 34;
-			// if only allow boolean
-
-			if(age < 18) {
-				System.out.println("Child");
-			}else if(age >= 18 && age < 30) {
-				System.out.println("Adult");
-			}else if(age >= 30 && age < 45) {
-				System.out.println("Mature");
-			}else {
-				System.out.println("Old");
+			
+			if(age == -1) {
+				break;
 			}
+			
+			System.out.print("Expected AgeGroup :");
+			String expectedAgeGroup = scan.next();
+			String ageGroup = "";
+			if(age < 18) {
+				ageGroup = "Child";
+			}else if(age >= 18 && age < 30) {
+				ageGroup ="Adult";
+			}else if(age >= 30 && age < 45) {
+				ageGroup = "Mature";
+			}else {
+				ageGroup = "Old";
+			}
+			if(expectedAgeGroup.equals(ageGroup)) {
+				System.out.println("Test Passed");
+			}else {
+				System.err.println("Test Failed. Expected :"+expectedAgeGroup +
+						", Actual: "+ageGroup)
+				;
+			}
+			
+		}
+		
+		
 	}
 }
