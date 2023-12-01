@@ -1,7 +1,12 @@
 package testometer_nov_23_java_wd;
 
+import org.testng.annotations.Test;
+
 public class SwitchDemo {
-	public static void main(String[] args) {
+	
+	
+	@Test
+	public void test1() {
 
 		// based on day name , provide me day number
 
