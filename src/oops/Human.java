@@ -2,11 +2,13 @@ package oops;
 
 public class Human {
 
-	String name;
-	int age;
-	String country;
+	String name; // instance
+	int age; // instance
+	static String country; // static variable
+	
 	
 	void talk(String content) {
+		int test = 10; 
 		System.out.println(name + " - " + content);
 	}
 	
