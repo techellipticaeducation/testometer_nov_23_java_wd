@@ -24,6 +24,7 @@ public class SwitchDemo {
 		// Switch  Case (only compare equality)
 
 		switch (dayName) {
+			// In case Monday and Mon , Code returning values 1
 			case "Monday":
 			case "Mon":
 				dayNumber = 1;
