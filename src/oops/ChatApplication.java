@@ -6,15 +6,8 @@ public class ChatApplication {
 		// How to create object of a class
 		Human.country = "India";
 		
-		Human h1 = new Human();
-		h1.name = "Ram";
-		h1.age = 17;
-		
-		
-		Human h2 = new Human();
-		h2.name = "Shyam";
-		h2.age = 24;
-		
+		Human h1 = new Human(17);
+		Human h2 = new Human("Shyam", 24);
 		
 		h1.talk("Hello");
 		h2.talk("Hi. I am good.");
