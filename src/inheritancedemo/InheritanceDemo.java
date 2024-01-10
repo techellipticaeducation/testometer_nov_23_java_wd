@@ -2,10 +2,21 @@ package inheritancedemo;
 
 public class InheritanceDemo {
 	public static void main(String[] args) {
-		B b1 = new B();
+		
+		B b1 = new B();  
+		b1.m2();
 		
 	}
 }
+
+// Single level
+// Multi Level
+// Herirachial 
+
+//one parent can hve multple child
+// Multiple inheritance not allowed in JAVA (ambiguity)
+// one child can have multiple parent
+
 
 // Red color
 // private method never inherit
@@ -22,6 +33,9 @@ class B extends A{
 	}
 }
 
+class C extends A{
+	
+}
 // Variables visibility
 
 
